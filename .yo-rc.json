@@ -1,0 +1,14 @@
+{
+  "generator-kraken": {
+    "taskModule": "grunt",
+    "lintModule": "eslint",
+    "description": "A shopping cart using NodeJS",
+    "author": "Raul Zuniga",
+    "templateModule": "makara",
+    "i18n": "i18n",
+    "componentPackager": "bower",
+    "cssModule": false,
+    "jsModule": "requirejs",
+    "useJson": null
+  }
+}
