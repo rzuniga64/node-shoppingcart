@@ -1,0 +1,17 @@
+.price span {
+    color: green;
+    background: #f4f4f4;
+    padding: 10px;
+    border: 1px #ccc solid;
+    border-radius:50%;
+}
+
+footer {
+    margin-top: 40px;
+    padding:10px;
+    text-align: center;
+}
+
+ul, li {
+    list-style: none;
+}

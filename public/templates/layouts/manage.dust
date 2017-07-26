@@ -33,9 +33,9 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Cart</a></li>
+                        <li><a href="/manage">Dashboard</a></li>
+                        <li><a href="/manage/books">Books</a></li>
+                        <li><a href="/manage/categories">Categories</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
@@ -54,17 +54,4 @@
                 </div>
             </div><!-- /.footer -->
     </body>
-    <script data-main="/js/app" src="/components/requirejs/require.js"></script>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script
-          src="https://code.jquery.com/jquery-3.2.1.min.js"
-          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-          crossorigin="anonymous">
-    </script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script
-        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous">
-    </script>
 </html>

@@ -1,5 +1,42 @@
 {>"layouts/master" /}
 
+<!--
+    Index view will be a four column layout of books with a title and a button that will brings us to the details
+    page.
+-->
 {<body}
-    <h1>{@pre type="content" key="greeting"/}</h1>
+
+    <div class="col-md-3 text-center">
+        <img src="/img/thumbnails/advanced_java.jpg">
+        <h4>Advanced 1.1 Java Programming</h4>
+        <p>Lorem ipusum dolor sit amets, consectetur adipiscing elit. </p>
+        <div class="price">Buy it for <span>$19.99</span></div>
+        <br/>
+        <a href="/books/details/1" class="btn btn-success btn-sm">Book Details</a>
+    </div>
+    <div class="col-md-3 text-center">
+        <img src="/img/thumbnails/core_java.jpg">
+        <h4>Core Java An Integrated Approach</h4>
+        <p>Lorem ipusum dolor sit amets, consectetur adipiscing elit. </p>
+        <div class="price">Buy it for <span>$17.99</span></div>
+        <br/>
+        <a href="/books/details/1" class="btn btn-success btn-sm">Book Details</a>
+    </div>
+    <div class="col-md-3 text-center">
+        <img src="/img/thumbnails/data-modeling-mongodb.jpg">
+        <h4>Data Modeling For MongoDB</h4>
+        <p>Lorem ipusum dolor sit amets, consectetur adipiscing elit. </p>
+        <div class="price">Buy it for <span>$29.99</span></div>
+        <br/>
+        <a href="/books/details/1" class="btn btn-success btn-sm">Book Details</a>
+    </div>
+    <div class="col-md-3 text-center">
+        <img src="/img/thumbnails/java-generics-and-collections.jpg">
+        <h4>Java Generics and Collections</h4>
+        <p>Lorem ipusum dolor sit amets, consectetur adipiscing elit. </p>
+        <div class="price">Buy it for <span>$13.99</span></div>
+        <br/>
+        <a href="/books/details/1" class="btn btn-success btn-sm">Book Details</a>
+    </div>
+
 {/body}
