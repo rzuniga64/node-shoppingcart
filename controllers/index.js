@@ -2,10 +2,10 @@
 
 var BookModel = require('../models/bookModel');
 
-
 module.exports = function (router) {
 
     router.get('/', function (req, res) {
+
         BookModel.find( {}, function (err, books) {
             if (err) {
                 console.log(err);

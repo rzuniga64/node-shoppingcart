@@ -9,3 +9,5 @@ var categoryModel = function() {
 
     return mongoose.model('Category', categorySchema);
 };
+
+module.exports = new categoryModel();
