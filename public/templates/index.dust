@@ -5,38 +5,14 @@
     page.
 -->
 {<body}
-
-    <div class="col-md-3 text-center">
-        <img src="/img/thumbnails/advanced_java.jpg">
-        <h4>Advanced 1.1 Java Programming</h4>
-        <p>Lorem ipusum dolor sit amets, consectetur adipiscing elit. </p>
-        <div class="price">Buy it for <span>$19.99</span></div>
-        <br/>
-        <a href="/books/details/1" class="btn btn-success btn-sm">Book Details</a>
-    </div>
-    <div class="col-md-3 text-center">
-        <img src="/img/thumbnails/core_java.jpg">
-        <h4>Core Java An Integrated Approach</h4>
-        <p>Lorem ipusum dolor sit amets, consectetur adipiscing elit. </p>
-        <div class="price">Buy it for <span>$17.99</span></div>
-        <br/>
-        <a href="/books/details/1" class="btn btn-success btn-sm">Book Details</a>
-    </div>
-    <div class="col-md-3 text-center">
-        <img src="/img/thumbnails/data-modeling-mongodb.jpg">
-        <h4>Data Modeling For MongoDB</h4>
-        <p>Lorem ipusum dolor sit amets, consectetur adipiscing elit. </p>
-        <div class="price">Buy it for <span>$29.99</span></div>
-        <br/>
-        <a href="/books/details/1" class="btn btn-success btn-sm">Book Details</a>
-    </div>
-    <div class="col-md-3 text-center">
-        <img src="/img/thumbnails/java-generics-and-collections.jpg">
-        <h4>Java Generics and Collections</h4>
-        <p>Lorem ipusum dolor sit amets, consectetur adipiscing elit. </p>
-        <div class="price">Buy it for <span>$13.99</span></div>
-        <br/>
-        <a href="/books/details/1" class="btn btn-success btn-sm">Book Details</a>
-    </div>
-
+    {#books}
+        <div class="col-md-3 text-center end">
+            <img src="/img/thumbnails/{.cover}">
+            <h4>{.title}</h4>
+            <p>{.truncText}</p>
+            <div class="price">Buy it for <span>{.price}/span></div>
+            <br/>
+            <a href="/books/details/{._id}" class="btn btn-success btn-sm">Book Details</a>
+        </div>
+    {/books}
 {/body}

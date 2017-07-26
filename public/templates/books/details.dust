@@ -7,25 +7,19 @@
 {<body}
 
     <div class="col-md-4 text-center">
-        <img src="/img/advanced_java.gif">
+        <img src="/img/{book.cover}">
     </div>
     <div class="col-md-8 text-center">
-        <h2>Advanced Java 1.1 Programming</h2>
+        <h2>{book.title}</h2>
         <ul class="bookInfo">
-            <li>Category: Java</li>
-            <li>Author: Jeffrey C. Rice</li>
-            <li>Publisher: Que Pub</li>
+            <li>Category: {book.category}</li>
+            <li>Author: {book.author}</li>
+            <li>Publisher: {book.publisher}</li>
         </ul>
         <br/>
-        <div class="price"><span>$19.99</span></div>
+        <div class="price"><span>{book.price}</span></div>
         <br/>
-        <p class="text-left">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquam rutrum risus, nec interdum eros
-            venenatis sed. Suspendisse pellentesque dictum elit, sed rutrum ante molestie at. Pellentesque sagittis
-            justo a odio lobortis posuere. In vel leo ultricies, placerat sem elementum, pellentesque ligula. Nam
-            aliquam iaculis vestibulum. Vestibulum feugiat finibus sollicitudin. Praesent consequat lacus nisi, nec
-            tincidunt urna tristique vestibulum.
-        </p>
+        <p class="text-left"> {book.description}</p>
         <a class="button success">Add to Cart</a>
     </div>
 
