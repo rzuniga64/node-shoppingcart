@@ -1,2 +1,15 @@
 {>"layouts/manage" /}
-ADD CATEGORIES
+
+{<body}
+    <div class="container-fluid">
+        <h2>Add Category</h2>
+        <form method="post" action="/manage/categories">
+            <div class="form-group">
+                <label>Name</label>
+                <input name="name" type="text" />
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+            <input type="hidden" name="_csrf" value="{_csrf}">
+        </form>
+    </div>
+{/body}

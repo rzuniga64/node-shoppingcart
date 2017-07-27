@@ -1,2 +1,16 @@
 {>"layouts/manage" /}
-EDIT CATEGORIES
+
+{<body}
+    <div class="container-fluid">
+        <h2>Edit Category</h2>
+        <form method="post" action="/manage/categories/edit/{category._id}">
+            <div class="form-group">
+                <label>Name</label>
+                <input name="name" type="text" value="{category.name}" />
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+            <input type="hidden" name="_csrf" value="{_csrf}">
+        </form>
+    </div>
+
+{/body}

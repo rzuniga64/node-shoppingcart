@@ -22,7 +22,7 @@
               <td><a class="btn btn-primary" href="/manage/books/edit/{._id}">Edit</a></td>
               <td>
                  <form class="form-group" method="post" action="/manage/books/delete/{._id}">
-                    <input type="submit" value="Delete" class="btn btn-danger btn-xs alert" />
+                    <button type="submit" class="btn btn-danger" />Delete</button>
                     <input type="hidden" name="_csrf" value="{_csrf}" />
                     <input type="hidden" name="_method" value="DELETE" />
                 </form>

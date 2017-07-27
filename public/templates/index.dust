@@ -1,16 +1,12 @@
 {>"layouts/master" /}
 
-<!--
-    Index view will be a four column layout of books with a title and a button that will brings us to the details
-    page.
--->
 {<body}
     {#books}
-        <div class="col-md-3 text-center end">
+        <div class="col-md-3 text-center">
             <img src="/img/thumbnails/{.cover}">
             <h4>{.title}</h4>
             <p>{.truncText}</p>
-            <div class="price">Buy it for <span>{.price}/span></div>
+            <div class="price">Buy it for <span>{.price}</span></div>
             <br/>
             <a href="/books/details/{._id}" class="btn btn-success btn-sm">Book Details</a>
         </div>
