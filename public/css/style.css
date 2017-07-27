@@ -15,3 +15,7 @@ footer {
 ul, li {
     list-style: none;
 }
+
+h2 span {
+    font-size: 18px;
+}
